@@ -1,4 +1,4 @@
-```markdown id="4m8xq"
+
 # GitHub Copilot Cloud Agent
 
 ## Understanding and enabling el GitHub Copilot Cloud Agent
@@ -462,4 +462,4 @@ El rendimiento puede variar según el código y las entradas utilizadas.
 - **Código inexacto:** el código puede parecer correcto pero ser semántica o sintácticamente incorrecto o no coincidir con la intención. Se debe validar su adecuación, patrones y estilo.
 - **Código público:** el agente puede producir coincidencias o coincidencias cercanas con código público incluso cuando **Block** está configurado; pueden no proporcionarse referencias.
 - **Aspectos legales y regulatorios:** se debe garantizar el cumplimiento de las obligaciones aplicables y evitar usos prohibidos por los términos de servicio y códigos de conducta.
-```
+
