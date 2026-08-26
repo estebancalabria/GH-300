@@ -46,9 +46,23 @@
 
 ---
 
+# Presentacion Profe
+
 # Requerimientos
 
 * Visual Studio Code
+
+# Recursos
+
+* Microsoft Learn
+   * https://learn.microsoft.com/es-es/training/courses/gh-300t00
+* Resumenes y PPTs del Profe
+   * https://github.com/estebancalabria/GH-300/
+* Labs oficiales
+   * https://github.com/estebancalabria/GH-300/tree/main/Labs
+* Para rendir el examen
+   * Exam Topics
+   * Ojear : https://www.youtube.com/playlist?list=PLMp-_n0HEFXWnm1JabKJbqhANE8p1yvbH
 
 # Setup
 
