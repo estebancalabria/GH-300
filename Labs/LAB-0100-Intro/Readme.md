@@ -16,13 +16,28 @@
 
 ### Paso 1: Abrir el Codespace
 
-[BROWSER] En el repo copiado, ir a **Issues**
+1. Abrir el repositorio copiado en GitHub.
 
-[LINK] Abrir el issue "Exercise: Getting Started with GitHub Copilot"
+2. En la página principal del repositorio, hacer clic en el botón **Code**.
 
-[MENU] Scroll abajo → "Open on GitHub Codespaces" → "Create new Codespace"
+3. Seleccionar la pestaña **Codespaces**.
 
-[WINDOWS] Esperar a que cargue. Instalar extensiones de Python y GitHub Copilot si no están
+4. Hacer clic en **Create codespace on main**.
+   
+   images/create-codespace.png
+
+5. Esperar a que se aprovisione el entorno y se inicie Visual Studio Code Web.
+
+6. Verificar que GitHub Copilot esté habilitado:
+   - Abrir la vista **Extensions**.
+   - Confirmar que **GitHub Copilot** está instalado.
+   - Confirmar que **GitHub Copilot Chat** está instalado.
+
+7. Verificar que la extensión de Python esté disponible:
+   - Buscar **Python (Microsoft)** en Extensions.
+   - Instalarla si no se encuentra instalada.
+
+8. Esperar a que finalice la configuración automática del entorno antes de comenzar el ejercicio.
 
 ### Paso 2: Copilot Chat (modo Ask)
 
