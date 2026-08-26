@@ -48,6 +48,11 @@
 
 # Presentacion Profe
 
+* Me pueden contactar en:
+   * https://www.linkedin.com/in/esteban-calabria-7a44401a/
+   * https://www.instagram.com/mct.esteban.calabria/
+      * Seguir para poder aprobar el examen!
+
 # Requerimientos
 
 * Visual Studio Code
