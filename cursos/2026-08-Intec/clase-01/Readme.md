@@ -466,6 +466,7 @@ copilot --resume=<ID CONVERSACION>
    * @workspace
       * Lo forzas a ver todo el proyecto entero
       * Consume mas tokens
+      * https://learn.microsoft.com/es-es/shows/visual-studio-code/github-copilots-workspace-deep-dive
    * @temninal / @terminalSelection
       * Agrega al contexto del chat los datos de la terminal
 
@@ -475,3 +476,11 @@ copilot --resume=<ID CONVERSACION>
 
 * Podemos usar la almohadilla # para referenciar archivos especificos
    * Podes mirar el archivo #file:libreria.tests.js y corregir la prueba que falla?
+* #codebase para agregar todo el proyecto al contexto
+--- 
+
+# Laboratorio
+
+* Ir a https://github.com/skills/getting-started-with-github-copilot
+* Darle al boton "Copy Excercise"
+* Ir a issues
