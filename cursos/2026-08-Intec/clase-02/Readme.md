@@ -215,3 +215,45 @@ applyTo: **
 * Arriba de pupeteer darle start
 
 <img width="220" height="80" alt="image" src="https://github.com/user-attachments/assets/8636b9ca-6492-41dc-8447-4e5e4ddcd423" />
+
+---
+
+# Copilot Spaces
+
+* Url
+  * https://github.com/copilot/spaces
+* Repo Laboratorio Oficial
+ * https://github.com/skills/scale-institutional-knowledge-using-copilot-spaces
+
+* Clonar el REPO Oficial
+  * https://github.com/skills/scale-institutional-knowledge-using-copilot-spaces
+* Crear un Space nuevo en
+  *  https://github.com/copilot/spaces
+
+* Instrucciones
+
+```
+## Proposito de este Space
+
+- Centralizar informacion de administracion de projecto
+- Dar acceso a los miembros del equipo a un lugar centralizado de infrmacion
+- Establecer estandares de manejo del proyecto
+
+## Templates de Isssues
+
+Los templates de isses estan en .github/ISSUE_TEMPLATE/
+```
+
+* Agregar como fuente la carpeta docs y el issue template del repo clonado
+
+* Probamos un prompt para crea un Issue
+
+```
+Creame un issue en el repo @estebancalabria/skills-scale-institutional-knowledge-using-copilot-space que pida actualizar la documentacion
+```
+
+* Crear un prompt para que haga algo con todo el material reunido
+
+```
+Haceme un resumen de 3 parrafos y despues bullets de la documentacion que hay en este space
+```
