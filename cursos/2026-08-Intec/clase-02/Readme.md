@@ -57,3 +57,85 @@
 
 ---
 
+# Prompt Engineering
+
+## High Level Goal
+
+* Consiste en poner un comentario grande al principio de cada archivo indicando lo que hace para guiar a copilot
+
+* Ejempllo
+```
+/*
+ API v1
+Este codigo corresponde a una api hecha con express que soporta cors y sirve para libros
+Tengo un get que me devuelve la lista de libros
+Un get que me devuelve un libro por su id
+Un post para agregar un libro nuevo
+Un put para actualizar un libro existente
+Un delete para eliminar un libro por su id
+La lista de libros es un json en memoria en una variable global
+Si no escuentra algo devuelve un error http correpondiente
+Siempre se validan los datos de entrada
+*/
+```
+
+```javascript
+const express = require('express');
+const cors = require('cors');
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+let libros = [
+    { id: 1, titulo: 'Cien años de soledad', autor: 'Gabriel García Márquez' },
+    { id: 2, titulo: '1984', autor: 'George Orwell' },
+    { id: 3, titulo: 'El principito', autor: 'Antoine de Saint-Exupéry' },
+    { id: 4, titulo: 'Don Quijote de la Mancha', autor: 'Miguel de Cervantes' },
+    { id: 5, titulo: 'Orgullo y prejuicio', autor: 'Jane Austen' }
+]; // Lista de libros en memoria
+
+// Puerto en el que escuchará la API
+const PORT = 3000;
+
+
+// Rutas de la API
+app.get('/libros', (req, res) => {
+    res.json(libros);
+});
+
+app.get('/libros/:id', (req, res) => {
+    const libro = libros.find(l => l.id === parseInt(req.params.id));
+    if (!libro) return res.status(404).send('Libro no encontrado');
+    res.json(libro);
+});
+
+app.post('/libros', (req, res) => {
+    const { id, titulo, autor } = req.body;
+    if (!id || !titulo || !autor) return res.status(400).send('Datos incompletos');
+    const libro = { id, titulo, autor };
+    libros.push(libro);
+    res.status(201).json(libro);
+});
+
+app.put('/libros/:id', (req, res) => {
+    const libro = libros.find(l => l.id === parseInt(req.params.id));
+    if (!libro) return res.status(404).send('Libro no encontrado');
+    const { titulo, autor } = req.body;
+    if (!titulo || !autor) return res.status(400).send('Datos incompletos');
+    libro.titulo = titulo;
+    libro.autor = autor;
+    res.json(libro);
+});
+
+app.delete('/libros/:id', (req, res) => {
+    const index = libros.findIndex(l => l.id === parseInt(req.params.id));
+    if (index === -1) return res.status(404).send('Libro no encontrado');
+    const libro = libros.splice(index, 1);
+    res.json(libro);
+});
+
+app.listen(PORT, () => {
+    console.log(`API v1 escuchando en el puerto ${PORT}`);
+});
+
+```
