@@ -41,6 +41,14 @@
 
 ---
 
+# Copiot Buisness
+
+* Importante leer la info de este repo y
+ * https://learn.microsoft.com/es-es/training/modules/github-copilot-management-and-customizations/
+
+
+---
+
 # Buenas Practicas (ojo para el examen)
 
 * Chequear todo lo que hace copilot
@@ -139,3 +147,71 @@ app.listen(PORT, () => {
 });
 
 ```
+
+## Copilot  Instructions
+
+* Las instrucciones permiten definir reglas de generacion de codigo para todo el proyecto
+
+* Para crearlas
+  * Crear una carpeta que se llama .gihub
+  * Crear un archivo que se llama copilot-instructions.md
+
+
+> [!NOTE]
+> Attenti por si cambia la forma. Siempre ir a la documentacion
+> https://docs.github.com/es/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions
+
+```
+---
+name: instrucciones-generacion-codigo
+description: Instrucciones para la generación de código en el proyecto.
+applyTo: **
+---
+
+# Instrucciones para generacion de codigo
+
+* Todas las funciones deben tener documentacion tipo JSDoc.
+* Todas las funciones comienzan con el prefijo "fn_".
+* La primera linea de las funciones tienen el comentario //Esteban Crack
+
+```
+
+> [!NOTE]
+> Chequear en la ruedita de copilot Chat en el menu Instrucciones que lo este tomando
+
+
+
+---
+
+# Model Context Protocol
+
+* URL
+  * https://modelcontextprotocol.io/
+  * https://github.com/modelcontextprotocol/servers-archived/tree/main/src
+* Caracteristicas
+  * Es la un protocolo para poder extender la capacidades de nuestro agente mediante herramientas nuevas
+
+> [!WARN]
+> Se pueden instlar globalmente para todos mis proyectos en la ruedita arriba del chat de Copilot, pero no lo recomiendo porque despues cada prompt tarda mucho
+
+* Instalar un mcp para el proyecto
+  * Creamos la carpeta .vscode en la raiz del proyecto
+  * Creamos el archivo mcp.json
+
+```json
+{
+    "servers": {
+        "puppeteer": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-puppeteer"
+            ]
+        }
+    }
+}
+```
+
+* Arriba de pupeteer darle start
+
+<img width="220" height="80" alt="image" src="https://github.com/user-attachments/assets/8636b9ca-6492-41dc-8447-4e5e4ddcd423" />
