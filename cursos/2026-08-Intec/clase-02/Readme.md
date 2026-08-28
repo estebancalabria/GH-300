@@ -19,7 +19,7 @@
       * /optimize
       * /generate
       * /explain
-  * # Hashtag / Almohadilla
+  * (#)Hashtag / Almohadilla
       * Para agregar al contexto del chat
       * #codebase (como el reemplazo de @workspace)
         * consume mas tokens porque tiene que indexar todo el proyexcto
